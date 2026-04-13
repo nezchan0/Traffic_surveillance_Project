@@ -89,17 +89,17 @@ To populate the database:
 
 Before running the script, update:
 
--   `excel_file_path` → Path to your Excel file\
+-   `excel_file_path` → Path to your Excel file
 -   MySQL credentials:
-    -   Username\
-    -   Password\
+    -   Username
+    -   Password
     -   Database name
 
 ------------------------------------------------------------------------
 
 ### Step 5: Run the Script
 
-Execute the Python file.\
+Execute the Python file.
 Once completed, the data from Excel will be inserted into the MySQL
 database.
 
@@ -109,8 +109,8 @@ database.
 
 After completing either method:
 
--   Database is created ✔️\
--   Tables are set up ✔️\
+-   Database is created ✔️
+-   Tables are set up ✔️
 -   Data is inserted ✔️
 
 ------------------------------------------------------------------------
