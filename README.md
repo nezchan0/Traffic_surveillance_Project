@@ -172,9 +172,9 @@ Server 2 provides:
 
 ### Landing page
 
-<center>
+<p align="center">
 <img src="TrafficSurveillanceProject_Wireframe_ss/Images_DL_detection_Server1_Application/1.DL_Detection_LandingPage.jpg" alt="DL Detection Landing Page" width="45%">
-</center>
+</p>
 
 ### License details previews
 
@@ -212,9 +212,11 @@ Server 2 provides:
 </table>
 
 ### Recently accessed persons
+<p align="center">
 <center>
 <img src="TrafficSurveillanceProject_Wireframe_ss/Images_DL_detection_Server1_Application/8.DL_Detection_Recently_Asscessed_PersonsList.jpg" alt="Recently Accessed Persons List" width="45%">
 </center>
+</p>
 
 ---
 
