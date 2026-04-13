@@ -1,0 +1,71 @@
+-- Table1: GeneralPeopleDetails
+CREATE TABLE GeneralPeopleDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Aadhar_no VARCHAR(12) UNIQUE NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    DOB DATE NOT NULL,
+    Address VARCHAR(255),
+    phone VARCHAR(15)
+);
+
+-- Table2: DLDetails
+CREATE TABLE DLDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    LicenseNumber VARCHAR(20) UNIQUE NOT NULL,
+    OwnerAadhar_no VARCHAR(12) NOT NULL,
+    licenseType VARCHAR(50),
+    IssueDate DATE NOT NULL,
+    ExpiryDate DATE NOT NULL,
+    FOREIGN KEY (OwnerAadhar_no) REFERENCES GeneralPeopleDetails(Aadhar_no)
+);
+
+
+-- Table3: VehicleDetails
+CREATE TABLE VehicleDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    NumberPlate VARCHAR(15) UNIQUE NOT NULL,
+    OwnerAadhar_no VARCHAR(12) NOT NULL,
+    VehicleType VARCHAR(50),
+    Registration_Date DATE NOT NULL,
+    Registration_Status ENUM('Valid', 'Expired') NOT NULL,
+    Insurance_Status ENUM('Valid', 'Expired') NOT NULL,
+    PUC_Status ENUM('Valid', 'Expired') NOT NULL,
+    FOREIGN KEY (OwnerAadhar_no) REFERENCES GeneralPeopleDetails(Aadhar_no)
+);
+
+
+-- Table4: SuspiciousVehicleDetails
+CREATE TABLE SuspiciousVehicleDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    VehicleNumberPlate VARCHAR(15) NOT NULL,
+    OwnerAadhar_no VARCHAR(12),
+    TimeHappened DATETIME NOT NULL,
+    Felony_Catogory ENUM('Expired_Status', 'Past_Felony', 'Wanted') NOT NULL,
+    Felony_Type VARCHAR(25),
+    ReasonDetail VARCHAR(150),
+    FOREIGN KEY (VehicleNumberPlate) REFERENCES VehicleDetails(NumberPlate),
+    FOREIGN KEY (OwnerAadhar_no) REFERENCES GeneralPeopleDetails(Aadhar_no)
+);
+
+--Table5: SuspisiousPersonDetails
+CREATE TABLE SuspiciousPersonDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    PersonAadhar_no VARCHAR(12) NOT NULL,
+    PersonLicenseNumber VARCHAR(20) DEFAULT NULL,
+    TimeHappened DATETIME NOT NULL,
+    Felony_Catogry ENUM('Expired_Status', 'Past_Felony', 'Wanted') NOT NULL,
+    Felony_Type VARCHAR(25),
+    ReasonDetail VARCHAR(100),
+    FOREIGN KEY (PersonAadhar_no) REFERENCES GeneralPeopleDetails(Aadhar_no),
+    FOREIGN KEY (PersonLicenseNumber) REFERENCES DLDetails(LicenseNumber)
+);
+
+
+-- Table6: AlertTable
+CREATE TABLE AlertTable (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Vehicle_Number_Plate VARCHAR(15) NOT NULL,
+    Time_Detected DATETIME NOT NULL,
+    FOREIGN KEY (Vehicle_Number_Plate) REFERENCES Vehicledetails(NumberPlate)
+);
+
