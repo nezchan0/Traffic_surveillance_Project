@@ -172,7 +172,7 @@ Server 2 provides:
 
 ### Landing page
 
-<img src="TrafficSurveillanceProject_Wireframe_ss/Images_DL_detection_Server1_Application/1.DL_Detection_LandingPage.jpg" alt="DL Detection Landing Page" width="100%">
+<img src="TrafficSurveillanceProject_Wireframe_ss/Images_DL_detection_Server1_Application/1.DL_Detection_LandingPage.jpg" alt="DL Detection Landing Page" width="45%">
 
 ### License details previews
 
