@@ -157,11 +157,11 @@ Server 2 provides:
 
 ## 🖼️ Architecture & Schema
 
-###Project Architecture
+### Project Architecture
 
 ![Architecture](TrafficSurveillanceProject_Wireframe_ss/Images_Architecture/1_Project_Architecture_Details.png)
 
-###Project Database Schema
+### Project Database Schema
 
 ![DatabaseSchema](TrafficSurveillanceProject_Wireframe_ss/Images_Architecture/2_TrafficProject_Schema.png)
 
@@ -276,15 +276,8 @@ This project combines database-driven verification and real-time computer vision
 
 The planning-stage diagrams below were created during early design work and are included here as a nice record of the project’s evolution, even though they are not central to the current runtime scope.
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="TrafficSurveillanceProject_Wireframe_ss/Images_Architecture/0_PlanningStageDetails_Project_Device&Implementation_Details.png" alt="Planning Stage Device and Implementation Details" width="100%">
-      <br><sub>Planning Stage — Device & Implementation Details</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="TrafficSurveillanceProject_Wireframe_ss/Images_Architecture/0_PlanningStageDetials_Project_Flow_Details.png" alt="Planning Stage Project Flow Details" width="100%">
-      <br><sub>Planning Stage — Project Flow Details</sub>
-    </td>
-  </tr>
-</table>
+### Project Flow Details
+![Project Flow Details](TrafficSurveillanceProject_Wireframe_ss/Images_Architecture/0_PlanningStageDetials_Project_Flow_Details.png)
+
+### Planning Stage — Device & Implementation Details
+
