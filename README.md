@@ -213,9 +213,7 @@ Server 2 provides:
 
 ### Recently accessed persons
 <p align="center">
-<center>
 <img src="TrafficSurveillanceProject_Wireframe_ss/Images_DL_detection_Server1_Application/8.DL_Detection_Recently_Asscessed_PersonsList.jpg" alt="Recently Accessed Persons List" width="45%">
-</center>
 </p>
 
 ---
