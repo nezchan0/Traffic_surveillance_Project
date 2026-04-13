@@ -3,7 +3,7 @@ import pandas as pd
 
 # Path to the Excel file and images folder
 excel_file_path = "TrafficProject/1_DummyData/CodeHelp/Aadhar_number.xlsx"
-images_folder_path = "TrafficProject/2_DL_Detection/server/TrafficProject/media/face_images"
+images_folder_path = "TrafficProject/2_DL_Detection/server1/TrafficProject/media/face_images"
 
 # Read the Excel file
 df = pd.read_excel(excel_file_path)
